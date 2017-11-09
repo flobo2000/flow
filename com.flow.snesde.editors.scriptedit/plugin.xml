@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="com.flow.snesde.editors.scriptedit.ScriptEditor"
+            default="false"
+            filenames="main.dscript"
+            icon="graphics/icons/16/doc_run.png"
+            id="com.flow.snesde.editors.scriptedit.MainScriptEditor"
+            name="Main Script Editor">
+      </editor>
+      <editor
+            class="com.flow.snesde.editors.scriptedit.ScriptEditor"
+            default="false"
+            extensions="dscript"
+            icon="graphics/icons/16/doc_script.png"
+            id="com.flow.snesde.editors.scriptedit.ScriptEditor"
+            name="Script Editor">
+      </editor>
+   </extension>
+   <extension
+         point="org.eclipse.core.contenttype.contentTypes">
+      <file-association
+            content-type="com.flow.snesde.editors.scriptedit.scripttype"
+            file-extensions="dscript">
+      </file-association>
+      <content-type
+            file-extensions="dscript"
+            id="com.flow.snesde.editors.scriptedit.content-type1"
+            name="Script File"
+            priority="normal">
+      </content-type>
+      <content-type
+            base-type="Script File"
+            id="com.flow.snesde.editors.scriptedit.content-type2"
+            name="Main Script File"
+            priority="high">
+      </content-type>
+   </extension>
+
+</plugin>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="com.flow.snesde.editors.paletteedit.PaletteEditor"
+            contributorClass="org.eclipse.emf.edit.ui.action.EditingDomainActionBarContributor"
+            default="true"
+            extensions="pal"
+            icon="graphics/icons/16/doc_palette.png"
+            id="com.flow.snesde.editors.paletteedit.PaletteEditor"
+            name="Palette Editor">
+      </editor>
+   </extension>
+   <extension
+         point="org.eclipse.core.contenttype.contentTypes">
+      <file-association
+            content-type="com.flow.snesde.editors.paletteedit.palettetype"
+            file-extensions="pal">
+      </file-association>
+   </extension>
+</plugin>

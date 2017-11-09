@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="com.flow.snesde.editors.projectmeta.ProjectMetaEditor"
+            contributorClass="org.eclipse.emf.edit.ui.action.EditingDomainActionBarContributor"
+            default="true"
+            filenames="project.meta"
+            icon="graphics/icons/16/doc_metadata.png"
+            id="com.flow.snesde.editors.projectmeta.ProjectMetaEditor"
+            name="Project Metadata Editor">
+      </editor>
+   </extension>
+   <extension
+         point="org.eclipse.core.contenttype.contentTypes">
+      <file-association
+            content-type="org.eclipse.core.runtime.xml"
+            file-extensions="meta"
+            file-names="project.meta">
+      </file-association>
+   </extension>
+
+</plugin>

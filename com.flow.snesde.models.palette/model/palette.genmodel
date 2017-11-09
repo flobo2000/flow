@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/com.flow.snesde.models.palette/src" modelPluginID="com.flow.snesde.models.palette"
+    modelName="Palette" modelPluginClass="" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    rootImplementsInterface="" booleanFlagsField="" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="6.0" copyrightFields="false" providerRootExtendsClass="" interfaceNamePattern=""
+    classNamePattern="" operationReflection="true" runtimePlatform="RCP" importOrganizing="true"
+    decoration="Live">
+  <foreignModel>palette.ecore</foreignModel>
+  <genPackages prefix="Palette" disposableProviderFactory="true" contentTypeIdentifier=""
+      ecorePackage="palette.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="palette.ecore#//PaletteSelectionType">
+      <genEnumLiterals ecoreEnumLiteral="palette.ecore#//PaletteSelectionType/OneColor"/>
+      <genEnumLiterals ecoreEnumLiteral="palette.ecore#//PaletteSelectionType/TwoColors"/>
+    </genEnums>
+    <genClasses ecoreClass="palette.ecore#//Palette">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute palette.ecore#//Palette/Name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference palette.ecore#//Palette/Colors"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute palette.ecore#//Palette/SelectionType"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference palette.ecore#//Palette/LeftSelectedColor"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference palette.ecore#//Palette/RightSelectedColor"/>
+    </genClasses>
+    <genClasses ecoreClass="palette.ecore#//Color">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute palette.ecore#//Color/r"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute palette.ecore#//Color/g"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute palette.ecore#//Color/b"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

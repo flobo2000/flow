@@ -1,0 +1,4 @@
+ASMPATH=/Users/florianboscheinen/Downloads/wladx95_osx_x86/wla-65816
+EMUPATH=/Applications/BSNES.app/Contents/MacOS/BSNES
+LINKPATH=/Users/florianboscheinen/Downloads/wladx95_osx_x86/wlalink
+eclipse.preferences.version=1

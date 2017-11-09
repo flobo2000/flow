@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <category
+            id="com.flow.snesde.snesdecategory"
+            name="SNES">
+      </category>
+      <primaryWizard
+            id="com.flow.snesde.core.wizards.create.project.NewProjectWizard">
+      </primaryWizard>
+      <wizard
+            category="com.flow.snesde.snesdecategory"
+            class="com.flow.snesde.core.wizards.createwizards.project.NewSnesdeProjectWizard"
+            finalPerspective="com.flow.snesde.core.perspectives.snesdeDefaultPerspective"
+            hasPages="true"
+            icon="graphics/icons/snesde.png"
+            id="com.flow.snesde.core.wizards.create.project.NewProjectWizard"
+            name="SNES Game"
+            project="true">
+      </wizard>
+      <wizard
+            category="com.flow.snesde.snesdecategory"
+            class="com.flow.snesde.core.wizards.createwizards.file.palette.NewPaletteWizard"
+            finalPerspective="com.flow.snesde.core.perspectives.snesdeDefaultPerspective"
+            hasPages="true"
+            icon="graphics/icons/doc_palette.png"
+            id="com.flow.snesde.core.wizards.create.palette.NewPaletteWizard"
+            name="Color Palette"
+            project="false">
+      </wizard>
+      <wizard
+            category="com.flow.snesde.snesdecategory"
+            class="com.flow.snesde.core.wizards.createwizards.file.tileset.NewTilesetWizard"
+            finalPerspective="com.flow.snesde.core.perspectives.snesdeDefaultPerspective"
+            hasPages="true"
+            icon="graphics/icons/doc_tileset.png"
+            id="com.flow.snesde.core.wizards.create.palette.NewTilesetWizard"
+            name="Tileset"
+            project="false">
+      </wizard>
+   </extension>
+   <extension
+         point="org.eclipse.ui.exportWizards">
+      <category
+            id="com.flow.snesde.snesdecategoryForExport"
+            name="SNES">
+      </category>
+      <wizard
+            category="com.flow.snesde.snesdecategoryForExport"
+            class="com.flow.snesde.core.wizards.exportwizards.file.palette.PaletteExportWizard"
+            icon="graphics/icons/doc_palette.png"
+            id="com.flow.snesde.core.wizards.exportPaletteWizard"
+            name="Color Palette">
+      </wizard>
+   </extension>
+   <extension
+         point="org.eclipse.ui.importWizards">
+      <category
+            id="com.flow.snesde.snesdecategoryForImport"
+            name="SNES">
+      </category>
+      <wizard
+            category="com.flow.snesde.snesdecategoryForImport"
+            class="com.flow.snesde.core.wizards.importwizards.file.palette.ImportPaletteWizard"
+            icon="graphics/icons/doc_palette.png"
+            id="com.flow.snesde.core.wizards.importPaletteWizard"
+            name="Color Palette">
+      </wizard>
+      <wizard
+            category="com.flow.snesde.snesdecategoryForImport"
+            class="com.flow.snesde.core.wizards.importwizards.file.tileset.ImportTilesetWizard"
+            icon="graphics/icons/doc_tileset.png"
+            id="com.flow.snesde.core.wizards.importTilesetWizard"
+            name="Tileset">
+      </wizard>
+   </extension>
+
+</plugin>

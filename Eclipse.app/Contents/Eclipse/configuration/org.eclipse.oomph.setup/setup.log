@@ -1,0 +1,10 @@
+[2017-10-18 18:58:11] Executing startup tasks
+[2017-10-18 18:58:12] Java(TM) SE Runtime Environment 1.8.0_121-b13
+[2017-10-18 18:58:12] Product self.product.version
+[2017-10-18 18:58:12] Bundle org.eclipse.oomph.setup 1.6.0.v20161125-0947, build=2774, branch=0f3cbae74af4fe94d13c32afb96e9cd4ad2194b7
+[2017-10-18 18:58:12] Bundle org.eclipse.oomph.setup.core 1.6.0.v20161128-0928, build=2774, branch=0f3cbae74af4fe94d13c32afb96e9cd4ad2194b7
+[2017-10-18 18:58:12] Bundle org.eclipse.oomph.setup.p2 1.6.0.v20161019-0656, build=2774, branch=0f3cbae74af4fe94d13c32afb96e9cd4ad2194b7
+[2017-10-18 18:58:12] Performing Preference /instance/com.flow.snesde.core/ASMPATH = /Users/florianboscheinen/Downloads/wladx95_osx_x86/wla-65816
+[2017-10-18 18:58:12] Performing Preference /instance/com.flow.snesde.core/EMUPATH = /Applications/BSNES.app/Contents/MacOS/BSNES
+[2017-10-18 18:58:12] Performing Preference /instance/com.flow.snesde.core/LINKPATH = /Users/florianboscheinen/Downloads/wladx95_osx_x86/wlalink
+[2017-10-18 18:58:12] 

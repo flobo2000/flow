@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<commands>
+	<visibleElement
+		id="org.eclipse.wb.rcp.SWT_AWT"
+		visible="false"/>
+	<visibleElement
+		id="org.eclipse.wb.rcp.menu"
+		visible="false"/>
+	<visibleElement
+		id="org.eclipse.wb.rcp.layouts"
+		visible="false"/>
+	<addCategory
+		id="custom_1454087673770"
+		name="Uilib"
+		description=""
+		visible="true"
+		open="true"/>
+	<addComponent
+		id="custom_1454087830743"
+		name="AnimatedGifLabel"
+		visible="true"
+		class="com.flow.snesde.uilib.animatedGifLabel.AnimatedGifLabel"
+		category="custom_1454087673770"/>
+	<addComponent
+		id="custom_1454087917740"
+		name="ColorSpectrumBrowser"
+		visible="true"
+		class="com.flow.snesde.uilib.colorSpectrumBrowser.ColorSpectrumBrowser"
+		category="custom_1454087673770"/>
+	<addComponent
+		id="custom_1454087943017"
+		name="DoubleColorSelectionPanel"
+		visible="true"
+		class="com.flow.snesde.uilib.doubleColorSelectionPanel.DoubleColorSelectionPanel"
+		category="custom_1454087673770"/>
+	<addComponent
+		id="custom_1454087972955"
+		name="PalettePanel"
+		visible="true"
+		class="com.flow.snesde.uilib.palettePanel.PalettePanel"
+		category="custom_1454087673770"/>
+	<addComponent
+		id="custom_1454087995798"
+		name="SingleColorSelectionPanel"
+		visible="true"
+		class="com.flow.snesde.uilib.singleColorSelectionPanel.SingleColorSelectionPanel"
+		category="custom_1454087673770"/>
+	<editComponent
+		id="custom_1454087830743"
+		name="AnimatedGifLabel"
+		description="A label with an animated loading GIF showing."
+		visible="true"
+		class="com.flow.snesde.uilib.animatedGifLabel.AnimatedGifLabel"/>
+	<editComponent
+		id="custom_1454087917740"
+		name="ColorSpectrumBrowser"
+		description="Enables the user to select any SNES color."
+		visible="true"
+		class="com.flow.snesde.uilib.colorSpectrumBrowser.ColorSpectrumBrowser"/>
+	<editComponent
+		id="custom_1454087943017"
+		name="DoubleColorSelectionPanel"
+		description="Shows two rectangles indicating color selection for the left and right mouse buttons."
+		visible="true"
+		class="com.flow.snesde.uilib.doubleColorSelectionPanel.DoubleColorSelectionPanel"/>
+	<editComponent
+		id="custom_1454087972955"
+		name="PalettePanel"
+		description="Shows up to 256 color blobs for an SNES color palette."
+		visible="true"
+		class="com.flow.snesde.uilib.palettePanel.PalettePanel"/>
+	<editComponent
+		id="custom_1454087995798"
+		name="SingleColorSelectionPanel"
+		description="Shows a single selected color as well as the number of the color."
+		visible="true"
+		class="com.flow.snesde.uilib.singleColorSelectionPanel.SingleColorSelectionPanel"/>
+</commands>

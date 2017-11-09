@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.debug.core.launchConfigurationTypes">
+      <launchConfigurationType
+            delegate="com.flow.snesde.launchers.sneslauncher.SnesLauncher"
+            id="com.flow.snesde.launchers.snesLauncher"
+            modes="run, debug"
+            name="SNES Game">
+      </launchConfigurationType>
+   </extension>
+   <extension
+         point="org.eclipse.debug.ui.launchConfigurationTypeImages">
+      <launchConfigurationTypeImage
+            configTypeID="com.flow.snesde.launchers.snesLauncher"
+            icon="graphics/snesde.png"
+            id="com.flow.snesde.launchers.snesdeIcon">
+      </launchConfigurationTypeImage>
+   </extension>
+   <extension
+         point="org.eclipse.debug.ui.launchConfigurationTabGroups">
+      <launchConfigurationTabGroup
+            class="com.flow.snesde.launchers.sneslauncher.SnesLauncherTabGroup"
+            id="com.flow.snesde.launchers.snesLauncherTabGroup"
+            type="com.flow.snesde.launchers.snesLauncher">
+         <launchMode
+               mode="run"
+               perspective="com.flow.snesde.core.perspectives.snesdeDefaultPerspective">
+         </launchMode>
+         <launchMode
+               mode="debug"
+               perspective="org.eclipse.debug.ui.DebugPerspective">
+         </launchMode>
+      </launchConfigurationTabGroup>
+   </extension>
+   <extension
+         point="org.eclipse.debug.ui.launchShortcuts">
+      <shortcut
+            class="com.flow.snesde.launchers.sneslauncher.SnesShortcutLauncher"
+            icon="graphics/snesde.png"
+            id="com.flow.snesde.launchers.shortcut1"
+            label="SNES Game"
+            modes="run, debug">
+         <contextualLaunch>
+            <enablement>
+                <with
+                    variable="selection">
+                    <count
+                        value="+">
+                    </count>
+                </with>
+            </enablement>
+        </contextualLaunch>   
+      </shortcut>
+   </extension>
+
+</plugin>
